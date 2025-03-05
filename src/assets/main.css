@@ -1,2 +1,7 @@
-
 @import "tailwindcss";
+
+@layer base {
+    .bg-primary{
+        @apply bg-sky-600;
+    }
+}
