@@ -5,6 +5,8 @@ import Project from "@/components/Project.vue";
 import Skill from "@/components/Skill.vue";
 import About from "@/components/About.vue";
 import Loader from "@/components/Loader.vue";
+import Footer from "@/components/Footer.vue";
+import Contact from "@/components/Contact.vue";
 import { ref, onMounted } from "vue";
 
 const loading = ref(true);
@@ -29,6 +31,8 @@ onMounted(() => {
     <About />
     <Project />
     <Skill />
+    <Contact /> 
+    <Footer />
   </body>
 </template>
 

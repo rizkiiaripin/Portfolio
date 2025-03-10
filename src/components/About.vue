@@ -1,5 +1,5 @@
 <template>
-<div class="my-10">
+<div class="my-20  mx-5 md:mx-0">
       <div class="container mx-auto w-full">
         <h1
           class="font-semibold text-sky-600 text-2xl mb-3 md:text-3xl"
