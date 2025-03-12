@@ -19,15 +19,6 @@
           ducimus ad iste voluptatum accusamus dolore totam possimus rerum
           aliquid!
         </p>
-        <div class="flex gap-2 justify-center sm:justify-start mt-8">
-          <a
-            class="bg-primary shadow-lg hover:bg-sky-800 group cursor-pointer text-white transition-all duration-700 px-3 py-2 rounded-lg"
-            >More About Me
-            <i
-              class="fa-solid fa-arrow-right transition-all ease-out group-hover:ml-5"
-            ></i
-          ></a>
-        </div>
       </div>
       <div class="w-full flex justify-center h-full items-center">
         <div
