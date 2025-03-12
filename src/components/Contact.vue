@@ -12,35 +12,35 @@
       <div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class=" mb-5">
-            <label class="">Name</label>
+            <label class="text-slate-800">Name</label>
             <input
               type="email"
               name="email"
               placeholder="Enter Your Name"
-              class="border rounded-lg p-3 border-slate-500 w-full mb-3"
+              class="border rounded-lg p-3 border-slate-500 w-full mb-3 focus:outline-slate-400"
             />
-            <label class="">Email</label>
+            <label class="text-slate-800">Email</label>
 
             <input
               type="email"
               name="email"
               placeholder="Enter Your Email"
-              class="border rounded-lg p-3 border-slate-500 w-full mb-3"
+              class="border rounded-lg p-3 border-slate-500 w-full mb-3 focus:outline-slate-400"
             />
-            <label class="">Phone Number</label>
+            <label class="text-slate-800">Phone Number</label>
 
             <input
               type="email"
               name="email"
               placeholder="Enter Your Phone Number"
-              class="border rounded-lg p-3 border-slate-500 w-full"
+              class="border rounded-lg p-3 border-slate-500 w-full focus:outline-slate-400"
             />
           </div>
           <div>
-            <label class="mb-2">Message</label>
+            <label class="mb-2 text-slate-800">Message</label>
             <textarea
               placeholder="Enter Your Message"
-              class="border rounded-lg p-3 border-slate-500 w-full h-55"></textarea>
+              class="border rounded-lg p-3 border-slate-500 w-full h-55 focus:outline-slate-400"></textarea>
           </div>
         </div>
         <div class="flex justify-center">

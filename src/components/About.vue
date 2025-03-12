@@ -4,7 +4,7 @@
         <h1
           class="font-semibold text-sky-600 text-2xl mb-3 md:text-3xl"
         >
-          About Me
+          About me
         </h1>
         <div
           class="grid grid-cols-1 md:grid-cols-2 gap-10 place-content-center"
@@ -16,12 +16,12 @@
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but
+              
             </p>
           </div>
           <div>
             <h2 class="font-semibold mb-4 text-2xl text-slate-700">Sosial Media</h2>
-            <p class="text-slate-700 text-lg">
+            <p class="text-slate-700 text-lg mb-4">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's 
             </p>

@@ -6,10 +6,10 @@
 <footer class="bg-white dark:bg-gray-900 border-t border-gray-300">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
-          <div class="mb-6 md:mb-0">
-              <a href="https://flowbite.com/" class="flex items-center">
-                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Muhamad Rizki</span>
-              </a>
+          <div class="mb-6 md:mb-0  justify-self-center">
+              <h1 class="text-7xl tracking-wide font-semibold text-gray-900 dark:text-white">
+              <span>Code smarter,</span><br> not harder.
+              </h1>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
               <div>
@@ -34,7 +34,7 @@
                   <h2 class="mb-6 text-lg font-semibold text-gray-900  dark:text-white">Connect</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                        <input type="email" name="email" placeholder="Enter Your Email" class="border rounded-lg p-2 border-slate-500 w-full mb-3"/>
+                        <input type="email" name="email" placeholder="Enter Your Email" class="border rounded-lg p-2 border-slate-500 w-full mb-3 focus:outline-slate-400"/>
                         <button class="w-full bg-primary rounded-lg py-1 text-white">Send</button>
                       </li>
                   </ul>
