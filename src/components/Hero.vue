@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="w-full h-screen">
+  <div class="w-full h-screen" >
     <div
       class="container w-full h-full mx-auto grid px-4 md:px-0 grid-cols-1 grid-rows-2 gap-5 sm:grid-rows-1 sm:grid-cols-2 place-items-center"
     >

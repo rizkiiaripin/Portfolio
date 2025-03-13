@@ -53,8 +53,8 @@ const closeModal = (id) => {
 </script>
 
 <template>
-  <div class="my-20">
-    <div class="container mx-auto w-full">
+  <div class="my-20" >
+    <div class="container mx-auto w-full" id="projects">
       <div class="text-center mb-15">
         <h1 class="font-semibold mb-3 text-slate-700 text-3xl">My Projects</h1>
         <p class="text-center text-slate-500">
@@ -79,6 +79,11 @@ const closeModal = (id) => {
             Show detail
           </div>
         </div>
+
+      </div>
+      <div class="flex justify-center mt-4">
+
+      <button class="bg-white border border-sky-600 text-slate-700 transition duration-500 rounded-lg py-2 px-4 hover:bg-sky-600 hover:text-white">Show More</button>
       </div>
     </div>
   </div>

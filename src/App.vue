@@ -7,6 +7,7 @@ import About from "@/components/About.vue";
 import Loader from "@/components/Loader.vue";
 import Footer from "@/components/Footer.vue";
 import Contact from "@/components/Contact.vue";
+import Blog from "@/components/Blog.vue";
 import { ref, onMounted } from "vue";
 
 const loading = ref(true);
@@ -20,20 +21,25 @@ onMounted(() => {
 </script>
 
 <template>
-  <body class="scroll-smooth">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
      <Loader :isLoading="loading" />
+  <div class="scroll-smooth">
     <Navbar />
-    <Hero />
-    <About />
-    <Project />
-    <Skill />
-    <Contact /> 
+    <Hero id="home"/>
+    <About id="about"/>
+    <Project  />
+    <Skill id="skills" />
+    <Blog id="blogs" />
+    <Contact id="contact" />
     <Footer />
-  </body>
+  </div>
 </template>
 
-<style></style>
+<style>
+  html {
+  scroll-behavior: smooth;
+}
+</style>
