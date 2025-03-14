@@ -13,7 +13,7 @@
     </div>
     <div class="container mx-auto">
       <div class="grid max-w-5xl place-content-center mx-auto">
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-5 md:mx-0">
           <div class="bg-white shadow-lg grid place-content-center p-2 rounded-lg">
             <!-- header for blog -->
             <div class="w-full ">
