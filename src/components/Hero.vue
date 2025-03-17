@@ -11,7 +11,7 @@
         </p>
         <h1 class="font-bold text-6xl mb-5 md:text-7xl text-slate-600">
           <span class="text-sky-700">Softwar</span
-          ><span class="bg-slate-200 text-slate-500 rounded-sm">e</span>
+          ><span class="bg-slate-200 text-slate-500 rounded-sm">e</span><br>
           Developer
         </h1>
         <p class="text-slate-500">

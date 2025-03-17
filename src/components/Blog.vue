@@ -2,7 +2,7 @@
 
 <template>
   <div class="my-20" >
-    <div class="text-center mb-4 flex justify-center items-center gap-10">
+    <div class="text-center mb-4 flex justify-center items-center gap-4">
       <span class="h-0.5 w-full bg-slate-300"></span>
       <p
         class="text-center text-lg text-slate-500 font-semibold whitespace-nowrap uppercase"

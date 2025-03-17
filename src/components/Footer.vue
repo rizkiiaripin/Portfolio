@@ -7,7 +7,7 @@
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0  justify-self-center">
-              <h1 class="text-6xl sm:text-7xl tracking-wide font-semibold text-gray-900 dark:text-white">
+              <h1 class="text-5xl sm:text-6xl tracking-wide font-semibold text-gray-900 dark:text-white">
               <span>Code smarter,</span><br> not harder.
               </h1>
           </div>

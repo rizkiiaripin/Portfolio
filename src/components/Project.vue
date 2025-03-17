@@ -33,7 +33,7 @@ const allProjects = ref([
     icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
     source: "Github",
     link: "http://localhost:5173/",
-    background: "bg-gradient-to-br from-blue-500/40 from-30% to-red-100 to-70%",
+    background: "bg-gradient-to-br from-blue-500/40 from-30% to-green-100 to-70%",
     isOpen: false,
   },
   {
@@ -44,7 +44,7 @@ const allProjects = ref([
     icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
     source: "Github",
     link: "http://localhost:5173/",
-    background: "bg-gradient-to-br from-blue-500/40 from-30% to-red-100 to-70%",
+    background: "bg-gradient-to-br from-blue-500/40 from-30% to-yellow-100 to-70%",
     isOpen: false,
   },
   {
@@ -90,7 +90,7 @@ const closeModal = (id) => {
 
 <template>
   <div class="my-20">
-    <div class="container mx-auto w-full" id="projects">
+    <div class="container mx-auto w-full " id="projects">
       <div class="text-center mb-15">
         <h1 class="font-semibold mb-3 text-slate-700 text-3xl">My Projects</h1>
         <p class="text-center text-slate-500">Some Collections of My Projects</p>
@@ -137,7 +137,7 @@ const closeModal = (id) => {
    
   <div v-for="modal in allProjects" :key="modal.id">
     <div v-if="modal.isOpen" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-500/50">
-      <div class="relative bg-white rounded-lg shadow-md w-full max-w-2xl">
+      <div class="relative bg-white rounded-lg shadow-md w-full mx-2 sm:mx-0 max-w-2xl">
         <div class="flex items-center justify-between p-4 border-b border-b-slate-200">
           <h3 class="text-xl font-semibold text-slate-700">{{ modal.title }}</h3>
           <button @click="closeModal(modal.id)" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 flex justify-center items-center">
