@@ -34,7 +34,7 @@
           class="w-60 shadow h-full sm:w-90 sm:h-120 hover:grayscale-0 grayscale group transition-all duration-1000 overflow-hidden bg-cover bg-center flex items-center justify-center rounded-lg"
         >
           <img
-            src="https://rizkii-sooty.vercel.app/src/assets/images/myphoto.jpeg"
+            src="/src/assets/images/myphoto.jpeg"
             alt=""
             class="rounded-lg w-full"
           />
