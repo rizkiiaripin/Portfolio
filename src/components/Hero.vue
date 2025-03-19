@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="w-full h-screen" >
+  <div class="w-full h-screen">
     <div
       class="container w-full h-full mx-auto grid px-4 md:px-0 grid-cols-1 grid-rows-2 gap-5 sm:grid-rows-1 sm:grid-cols-2 place-items-center"
     >
@@ -11,7 +11,7 @@
         </p>
         <h1 class="font-bold text-6xl mb-5 md:text-7xl text-slate-600">
           <span class="text-sky-700">Softwar</span
-          ><span class="bg-slate-200 text-slate-500 rounded-sm">e</span><br>
+          ><span class="bg-slate-200 text-slate-500 rounded-sm">e</span><br />
           Developer
         </h1>
         <p class="text-slate-500">
@@ -19,6 +19,15 @@
           ducimus ad iste voluptatum accusamus dolore totam possimus rerum
           aliquid!
         </p>
+        <div class=" mt-6 ">
+          <a
+            href="https://wa.me/6285797779967"
+            target="_blank"
+            class="py-2 px-3 mx-auto sm:mx-0 w-30 rounded-lg transition  duration-500 my-4 flex items-center justify-center gap-2 border border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
+          >
+            <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp
+          </a>
+        </div>
       </div>
       <div class="w-full flex justify-center h-full items-center">
         <div

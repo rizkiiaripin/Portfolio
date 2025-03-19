@@ -43,8 +43,8 @@ onUnmounted(() => {
 <template>
   <nav
     :class="[
-      'w-full transition-all duration-300',
-      scroll ? 'fixed top-0 left-0 bg-white shadow-lg z-50' : 'sticky md:fixed top-0 bg-transparent',
+      'w-full transition-all duration-200 md:py-auto',
+      scroll ? 'fixed top-0 left-0 bg-white shadow-lg z-50' : '  md:fixed top-0 bg-white md:bg-transparent',
     ]"
   >
     <div class="container mx-auto flex items-center justify-between px-5 py-4">
@@ -59,7 +59,7 @@ onUnmounted(() => {
       <ul
         :class="[
           'gap-2 flex text-slate-800 md:flex',
-          isMobileMenuOpen ? 'flex md:block  justify-center items-center absolute h-15 md:h-px md:static top-16 left-0 bg-white w-full md:py-5 shadow-md md:shadow-none' : 'hidden md:flex'
+          isMobileMenuOpen ? 'grid md:block  justify-center items-center absolute py-3 md:h-px md:static top-10 left-0 bg-white w-full md:py-5 shadow-md md:shadow-none' : 'hidden md:flex'
         ]"
       >
         <li v-for="section in ['home', 'about', 'projects','skills', 'blogs', 'contact']" :key="section">
@@ -75,21 +75,6 @@ onUnmounted(() => {
         </li>
       </ul>
 
-      <!-- WhatsApp Button -->
-      <div class="hidden md:block">
-        <a
-          href="https://wa.me/6281234567890"
-          target="_blank"
-          :class="[
-            'py-2 px-3 rounded-lg transition duration-500 flex items-center gap-2',
-            scroll ? 'border border-green-600 text-green-600 hover:bg-green-600 hover:text-white' :
-                     'border border-slate-600 text-slate-600 hover:bg-slate-600 hover:text-white',
-            isMobileMenuOpen ? 'white-space-nowrap' : 'text-slate-600'
-          ]"
-        >
-          WhatsApp me <i class="fa-solid fa-arrow-right"></i>
-        </a>
-      </div>
     </div>
   </nav>
 </template>

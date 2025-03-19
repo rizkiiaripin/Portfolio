@@ -35,6 +35,7 @@ onMounted(() => {
     <Blog id="blogs" />
     <Contact id="contact" />
     <Footer />
+  
   </div>
 </template>
 

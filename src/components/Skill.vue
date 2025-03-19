@@ -55,7 +55,7 @@ const scrollToSection = (sectionId) => {
         class="flex overflow-x-auto scrollbar-hide gap-10 w-full"
       >
         <div id="frameworks" class="min-w-full flex-shrink-0">
-          <div class="flex justify-center items-center  place-items-center gap-10">
+          <div class="md:flex justify-center items-center grid grid-cols-3  place-items-center gap-5 ">
             <div class="">
               <div class="flex items-center gap-10">
                 <img
@@ -93,37 +93,25 @@ const scrollToSection = (sectionId) => {
                 </div> -->
               </div>
             </div>
+           
           </div>
         </div>
-
         <div id="tools" class="min-w-full flex-shrink-0">
-          <h2 class="text-2xl font-bold text-slate-700 mb-5">Tools</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div class="">
-              <div class="flex items-center gap-10">
-               <img
-                  src="http://localhost:5173/src/assets/images/skills/tools/git.png"
-                />
-                <div class="w-full">
-                  <h2 class="text-slate-600 text-lg font-semibold">Git</h2>
-                  <hr class="w-full text-slate-400" />
-                </div>
-              </div>
-            </div>
+          <div class="md:flex justify-center items-center grid grid-cols-3  place-items-center gap-5 ">
             <div class="">
               <div class="flex items-center gap-10">
                 <img
-                  src="http://localhost:5273/src/assets/images/skills/vscode.png"
-                  class="w-16 h-16"
+                  src="http://localhost:5173/src/assets/images/skills/tools/git.png"
                 />
-                <div class="w-full">
-                  <h2 class="text-slate-600 text-lg font-semibold">VS Code</h2>
+                <!-- <div class="w-full">
+                  <h2 class="text-slate-600 text-lg font-semibold">Laravel</h2>
                   <hr class="w-full text-slate-400" />
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
