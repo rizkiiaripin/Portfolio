@@ -1,4 +1,12 @@
-<script setup></script>
+<script setup>
+const baseImagePath = import.meta.env.BASE_URL + "src/assets/images/";
+const blogs = [{
+  'image': baseImagePath + 'blogs/Blog1.jpg',
+  'title': 'intership in company Astacode',
+  'description' :'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s,',
+  'date': '2 moths ago'
+}]
+</script>
 
 <template>
   <div class="my-20" >
@@ -14,21 +22,19 @@
     <div class="container mx-auto">
       <div class="grid max-w-5xl place-content-center mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-5 md:mx-0">
-          <div class="bg-white shadow-lg grid place-content-center p-2 rounded-lg">
+          <div class="bg-white shadow-lg grid place-content-center p-2 rounded-lg" v-for="blog in blogs" :key="blog.title"> 
             <!-- header for blog -->
             <div class="w-full ">
-              <img src="http://localhost:5173/src/assets/images/blogs/Blog1.jpg" class="rounded-t-lg" />
+              <img :src="blog.image" class="rounded-t-lg" />
             </div>
             <h1 class="text-lg mb-0.5 text-slate-800 font-semibold">
-              intership in company Astacode
+              {{blog.title}}
             </h1>
             <div class="grid">
               <p class="text-sm text-slate-700 mb-1">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the
-                1500s,
+               {{blog.description}}
               </p>
-              <p class="text-sm justify-self-end text-slate-500">2 moths ago</p>
+              <p class="text-sm justify-self-end text-slate-500">{{blog.date}}</p>
             </div>
           </div>
           

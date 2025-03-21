@@ -1,9 +1,28 @@
 <script setup>
 import { ref } from "vue";
 
+// Fungsi untuk mendapatkan path gambar secara dinamis
+const baseImagePath = import.meta.env.BASE_URL + "src/assets/images/";
 const containerRef = ref(null);
 const activeSection = ref("frameworks");
 
+// Data untuk skills
+const skills = ref({
+  frameworks: [
+    { image: baseImagePath + "skills/laravel.png" },
+    { image: baseImagePath + "skills/bootstrap.png" },
+    { image: baseImagePath + "skills/tailwindcss.png" },
+    { image: baseImagePath + "skills/vue.png" }
+  ],
+  tools: [
+    { image: baseImagePath + "skills/tools/git.png" },
+    { image: baseImagePath + "skills/tools/postman.png" },
+    { image: baseImagePath + "skills/tools/figma.png" },
+    
+  ],
+});
+
+// Fungsi scroll ke section yang diklik
 const scrollToSection = (sectionId) => {
   if (containerRef.value) {
     const section = document.getElementById(sectionId);
@@ -27,7 +46,7 @@ const scrollToSection = (sectionId) => {
         </p>
       </div>
 
-      <div class="flex justify-center gap-5 mb-10 ">
+      <div class="flex justify-center gap-5 mb-10">
         <a
           @click="scrollToSection('frameworks')"
           :class="
@@ -36,7 +55,13 @@ const scrollToSection = (sectionId) => {
           class="group cursor-pointer font-semibold"
         >
           Frameworks
-          <hr :class="activeSection === 'frameworks' ? 'bg-blue-700' : 'hidden group-hover:flex transition-all duration-1000'" />
+          <hr
+            :class="
+              activeSection === 'frameworks'
+                ? 'bg-blue-700'
+                : 'hidden group-hover:flex transition-all duration-1000'
+            "
+          />
         </a>
         <a
           @click="scrollToSection('tools')"
@@ -46,7 +71,13 @@ const scrollToSection = (sectionId) => {
           class="group cursor-pointer font-semibold"
         >
           Tools
-          <hr :class="activeSection === 'tools' ? 'bg-blue-700' : 'hidden group-hover:flex transition-all duration-1000'" />
+          <hr
+            :class="
+              activeSection === 'tools'
+                ? 'bg-blue-700'
+                : 'hidden group-hover:flex transition-all duration-1000'
+            "
+          />
         </a>
       </div>
 
@@ -55,63 +86,31 @@ const scrollToSection = (sectionId) => {
         class="flex overflow-x-auto scrollbar-hide gap-10 w-full"
       >
         <div id="frameworks" class="min-w-full flex-shrink-0">
-          <div class="md:flex justify-center items-center grid grid-cols-3  place-items-center gap-5 ">
-            <div class="">
+          <div
+            class="md:flex justify-center items-center grid grid-cols-3 place-items-center gap-5"
+          >
+            <div class="" v-for="framework in skills.frameworks" :key="framework.name" >
               <div class="flex items-center gap-10">
                 <img
-                  src="http://localhost:5173/src/assets/images/skills/laravel.png"
+                  :src="framework.image"
                 />
-                <!-- <div class="w-full">
-                  <h2 class="text-slate-600 text-lg font-semibold">Laravel</h2>
-                  <hr class="w-full text-slate-400" />
-                </div> -->
               </div>
             </div>
-            <div class="">
-              <div class="flex items-center gap-10">
-                <img
-                  src="http://localhost:5173/src/assets/images/skills/bootstrap.png"
-                />
-                <!-- <div class="w-full">
-                  <h2 class="text-slate-600 text-lg font-semibold">
-                    Bootstrap
-                  </h2>
-                  <hr class="w-full text-slate-400" />
-                </div> -->
-              </div>
-            </div>
-            <div class="">
-              <div class="flex items-center gap-10">
-                <img
-                  src="http://localhost:5173/src/assets/images/skills/tailwindcss.png"
-                />
-                <!-- <div class="w-full">
-                  <h2 class="text-slate-600 text-lg font-semibold">
-                    Tailwind CSS
-                  </h2>
-                  <hr class="w-full text-slate-400" />
-                </div> -->
-              </div>
-            </div>
-           
           </div>
         </div>
         <div id="tools" class="min-w-full flex-shrink-0">
-          <div class="md:flex justify-center items-center grid grid-cols-3  place-items-center gap-5 ">
-            <div class="">
-              <div class="flex items-center gap-10">
+          <div
+            class="md:flex justify-center items-center grid grid-cols-3 place-items-center gap-5"
+          >
+            <div class="" v-for="tool in skills.tools" :key="tool.name">
+              <div class="flex items-center gap-10" >
                 <img
-                  src="http://localhost:5173/src/assets/images/skills/tools/git.png"
+                  :src="tool.image"
                 />
-                <!-- <div class="w-full">
-                  <h2 class="text-slate-600 text-lg font-semibold">Laravel</h2>
-                  <hr class="w-full text-slate-400" />
-                </div> -->
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>

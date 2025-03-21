@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+const baseImagePath = import.meta.env.BASE_URL + "src/assets/images/";
+</script>
 
 <template>
   <div class="w-full h-screen">
@@ -34,7 +37,7 @@
           class="w-60 shadow h-full sm:w-90 sm:h-120 hover:grayscale-0 grayscale group transition-all duration-1000 overflow-hidden bg-cover bg-center flex items-center justify-center rounded-lg"
         >
           <img
-            src="/src/assets/images/myphoto.jpeg"
+            :src="baseImagePath + 'myphoto.jpeg'"
             alt=""
             class="rounded-lg w-full"
           />

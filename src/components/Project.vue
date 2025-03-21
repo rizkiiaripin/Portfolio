@@ -1,13 +1,16 @@
 <script setup>
 import { ref } from "vue";
 
+// Base URL untuk gambar agar lebih dinamis
+const baseImagePath = import.meta.env.BASE_URL + "src/assets/images/";
+
 // Semua data proyek
 const allProjects = ref([
   {
     id: 1,
     title: "Company profile LPK Tsukuba",
     description: "Deskripsi detail mengenai Project 1.",
-    image: "src/assets/images/project1.png",
+    image: baseImagePath + "projects/project1.png",
     icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
     source: "Github",
     link: "",
@@ -18,7 +21,7 @@ const allProjects = ref([
     id: 2,
     title: "Project 2",
     description: "Deskripsi detail mengenai Project 2.",
-    image: "src/assets/images/project-3.png",
+    image: baseImagePath + "projects/project-3.png",
     icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
     source: "Github",
     link: "",
@@ -29,7 +32,7 @@ const allProjects = ref([
     id: 3,
     title: "Project 3",
     description: "Deskripsi detail mengenai Project 3.",
-    image: "src/assets/images/project-3.png",
+    image: baseImagePath + "projects/project-3.png",
     icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
     source: "Github",
     link: "",
@@ -40,7 +43,7 @@ const allProjects = ref([
     id: 4,
     title: "Project 4",
     description: "Deskripsi detail mengenai Project 4.",
-    image: "src/assets/images/project-3.png",
+    image: baseImagePath + "projects/project-3.png",
     icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
     source: "Github",
     link: "",
@@ -51,13 +54,13 @@ const allProjects = ref([
     id: 5,
     title: "Project 5",
     description: "Deskripsi detail mengenai Project 5.",
-    image: "src/assets/images/project-3.png",
+    image: baseImagePath + "projects/project-3.png",
     icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
     source: "Github",
     link: "",
     background: "bg-gradient-to-br from-blue-500/40 from-30% to-red-100 to-70%",
     isOpen: false,
-  },
+  }
 ]);
 
 // Jumlah proyek yang ditampilkan
@@ -87,6 +90,7 @@ const closeModal = (id) => {
   );
 };
 </script>
+
 
 <template>
   <div class="my-20">

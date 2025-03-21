@@ -18,6 +18,7 @@ onMounted(() => {
     loading.value = false;
   }, 1000); // Simulates loading time (adjust as needed)
 });
+
 </script>
 
 <template>

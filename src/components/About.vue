@@ -1,3 +1,33 @@
+<script setup>
+  import { ref } from "vue";
+  const baseImagePath = import.meta.env.BASE_URL + "src/assets/images/";
+  const socialMedia =[{
+    name: "Instagram",
+    icon: "fa-brands fa-instagram",
+    link: "https://www.instagram.com/kii.76576?igsh=MTFwcXoxd24zbzI3cg==",
+  },
+  {
+    name: "Facebook",
+    icon: "fa-brands fa-facebook",
+    link: "https://www.facebook.com/profile.php?id=100092078480105",
+  },
+  {
+    name: "Whatsapp",
+    icon: "fa-brands fa-whatsapp",
+    link: "https://wa.me/6285797779967",
+  },
+  {
+    name: "Linkedin",
+    icon: "fa-brands fa-linkedin",
+    link: "https://www.linkedin.com/in/muhamad-rizki-aripin-95327b354/",
+  },
+  {
+    name: "Github",
+    icon: "fa-brands fa-github",
+    link: "https://github.com/rizkiiaripin"
+    }
+  ];
+</script>
 <template>
   <div class="my-20 mx-5 md:mx-0">
     <div class="container mx-auto w-full">
@@ -14,7 +44,7 @@
             class="scale-80 sm:scale-50 shadow-2xl -rotate-15 sm:-rotate-20 mb-5 bg-white py-3 px-10"
           >
             <img
-              src="http://localhost:5173/src/assets/images/abouts/image-about.png"
+              :src="baseImagePath + 'abouts/image-about.png'"
               alt=""
             />
           </div>
@@ -36,40 +66,14 @@
           <ul class="text-gray-500 dark:text-gray-400 font-medium">
               <div class="flex mt-4  sm:mt-0 gap-2 text-xl justify-center my-4 md:justify-start md:mx-0">
                 <a
-                  href="#"
+                   v-for="media in socialMedia" :key="media.name" :href=" media.link"
                   class="text-gray-500 hover:text-gray-900 flex items-center dark:hover:text-white"
                 >
-                
-                 <i class="fa-brands fa-instagram"></i>
+                  <i :class="media.icon"></i>
+
                 </a>
-                <a
-                  href="#"
-                  class="text-gray-500 hover:text-gray-900 flex items-center dark:hover:text-white"
-                >
                 
-                 <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a
-                  href="#"
-                  class="text-gray-500 hover:text-gray-900 flex items-center dark:hover:text-white"
-                >
                 
-                 <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                <a
-                  href="#"
-                  class="text-gray-500 hover:text-gray-900 flex items-center dark:hover:text-white"
-                >
-                
-                 <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a
-                  href="#"
-                  class="text-gray-500 hover:text-gray-900 flex items-center dark:hover:text-white"
-                >
-                
-                 <i class="fa-brands fa-github"></i>
-                </a>
                
               </div>
             </ul>
