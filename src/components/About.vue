@@ -1,6 +1,5 @@
 <script setup>
   import { ref } from "vue";
-  const baseImagePath = import.meta.env.BASE_URL + "src/assets/images/";
   const socialMedia =[{
     name: "Instagram",
     icon: "fa-brands fa-instagram",
@@ -32,7 +31,7 @@
   <div class="my-20 mx-5 md:mx-0">
     <div class="container mx-auto w-full">
       <!-- title -->
-      <div class="text-center mb-5">
+      <div class="text-center mb-5"> 
         <h1 class="font-semibold mb-3 text-slate-700 text-3xl">About Me</h1>
         <p class="text-center text-slate-500">Allow me to introduce myself</p>
       </div>
@@ -44,7 +43,7 @@
             class="scale-80 sm:scale-50 shadow-2xl -rotate-15 sm:-rotate-20 mb-5 bg-white py-3 px-10"
           >
             <img
-              :src="baseImagePath + 'abouts/image-about.png'"
+              src="/src/assets/images/abouts/image-about.png"
               alt=""
             />
           </div>

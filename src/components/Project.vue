@@ -1,16 +1,13 @@
 <script setup>
 import { ref } from "vue";
 
-// Base URL untuk gambar agar lebih dinamis
-const baseImagePath = import.meta.env.BASE_URL + "src/assets/images/";
-
 // Semua data proyek
 const allProjects = ref([
   {
     id: 1,
     title: "Company profile LPK Tsukuba",
     description: "Deskripsi detail mengenai Project 1.",
-    image: baseImagePath + "projects/project1.png",
+    image: "../src/assets/images/projects/project1.png",
     icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
     source: "Github",
     link: "",
@@ -21,7 +18,7 @@ const allProjects = ref([
     id: 2,
     title: "Project 2",
     description: "Deskripsi detail mengenai Project 2.",
-    image: baseImagePath + "projects/project-3.png",
+    image:"../src/assets/images/projects/project-3.png",
     icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
     source: "Github",
     link: "",
@@ -32,7 +29,7 @@ const allProjects = ref([
     id: 3,
     title: "Project 3",
     description: "Deskripsi detail mengenai Project 3.",
-    image: baseImagePath + "projects/project-3.png",
+    image: "../src/assets/images/projects/project-3.png",
     icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
     source: "Github",
     link: "",
@@ -43,22 +40,11 @@ const allProjects = ref([
     id: 4,
     title: "Project 4",
     description: "Deskripsi detail mengenai Project 4.",
-    image: baseImagePath + "projects/project-3.png",
+    image:"../src/assets/images/projects/project-3.png",
     icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
     source: "Github",
     link: "",
     background: "bg-gradient-to-br from-blue-500/40 from-30% to-yellow-100 to-70%",
-    isOpen: false,
-  },
-  {
-    id: 5,
-    title: "Project 5",
-    description: "Deskripsi detail mengenai Project 5.",
-    image: baseImagePath + "projects/project-3.png",
-    icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
-    source: "Github",
-    link: "",
-    background: "bg-gradient-to-br from-blue-500/40 from-30% to-red-100 to-70%",
     isOpen: false,
   }
 ]);
@@ -122,7 +108,7 @@ const closeModal = (id) => {
         <button
           v-if="visibleCount < allProjects.length"
           @click="showMore"
-          class="bg-white border border-sky-600 text-slate-700 transition duration-500 rounded-lg py-2 px-4 hover:bg-sky-600 hover:text-white flex items-center"
+          class="bg-white cursor-pointer border border-sky-600 text-slate-700 transition duration-500 rounded-lg py-2 px-4 hover:bg-sky-600 hover:text-white flex items-center"
         >
           <span v-if="!isLoading">Show More</span>
           <span v-if="isLoading" class="flex items-center">
