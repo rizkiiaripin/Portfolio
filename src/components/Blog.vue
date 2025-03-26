@@ -2,7 +2,7 @@
 const blogs = [{
   'image': '/images/blogs/Blog1.jpg',
   'title': 'intership in company Astacode',
-  'description' :'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s,',
+  'description' :"This program is organized by the school for students to know how to work in real company , whith that  experience i get a lot of knowledge about how to work in real company",
   'date': '2 moths ago'
 }]
 </script>
