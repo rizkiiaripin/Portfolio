@@ -4,9 +4,9 @@
 <template>
   <div class="w-full h-screen">
     <div
-      class="container w-full h-full mx-auto grid px-4 md:px-0 grid-cols-1 grid-rows-2 gap-5 sm:grid-rows-1 sm:grid-cols-2 place-items-center"
+      class="w-full h-full mx-auto grid px-4 md:px-0 grid-cols-1 grid-rows-2  sm:grid-rows-1 sm:grid-cols-2 items-center"
     >
-      <div class="text-center sm:text-start">
+      <div class="text-center sm:text-start grid place-content-center">
         <p class="text-md font-medium">
           Hai I'm <span class="text-sky-600 uppercase">Rizki</span> I'm a
         </p>
@@ -15,10 +15,8 @@
           ><span class="bg-slate-200 text-slate-500 rounded-sm">e</span><br />
           Developer
         </h1>
-        <p class="text-slate-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In aliquam
-          ducimus ad iste voluptatum accusamus dolore totam possimus rerum
-          aliquid!
+        <p class="text-slate-500 text-lg">
+          So, surely with hardship comes ease. , <br> Surely with ˹that˺ hardship comes ˹more˺ ease
         </p>
         <div class=" mt-6 ">
           <a
