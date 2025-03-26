@@ -2,22 +2,21 @@
 import { ref } from "vue";
 
 // Fungsi untuk mendapatkan path gambar secara dinamis
-const baseImagePath = import.meta.env.BASE_URL + "src/assets/images/";
 const containerRef = ref(null);
 const activeSection = ref("frameworks");
 
 // Data untuk skills
 const skills = ref({
   frameworks: [
-    { image: baseImagePath + "skills/laravel.png" },
-    { image: baseImagePath + "skills/bootstrap.png" },
-    { image: baseImagePath + "skills/tailwindcss.png" },
-    { image: baseImagePath + "skills/vue.png" }
+    { image: "/images/skills/laravel.png" },
+    { image: "/images/skills/bootstrap.png" },
+    { image: "/images/skills/tailwindcss.png" },
+    { image: "/images/skills/vue.png" }
   ],
   tools: [
-    { image: baseImagePath + "skills/tools/git.png" },
-    { image: baseImagePath + "skills/tools/postman.png" },
-    { image: baseImagePath + "skills/tools/figma.png" },
+    { image: "/images/skills/tools/git.png" },
+    { image: "/images/skills/tools/postman.png" },
+    { image: "/images/skills/tools/figma.png" },
     
   ],
 });

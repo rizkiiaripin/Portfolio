@@ -43,7 +43,7 @@
             class="scale-80 sm:scale-50 shadow-2xl -rotate-15 sm:-rotate-20 mb-5 bg-white py-3 px-10"
           >
             <img
-              src="/src/assets/images/abouts/image-about.png"
+              src="/images/abouts/image-about.png"
               alt=""
             />
           </div>
