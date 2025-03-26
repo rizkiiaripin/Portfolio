@@ -86,9 +86,9 @@ const scrollToSection = (sectionId) => {
       >
         <div id="frameworks" class="min-w-full flex-shrink-0">
           <div
-            class="md:flex justify-center items-center grid grid-cols-3 place-items-center gap-5"
+            class="md:flex justify-center items-center grid grid-cols-3 place-items-center gap-5  " 
           >
-            <div class="" v-for="framework in skills.frameworks" :key="framework.name" >
+            <div class="" v-for="framework in skills.frameworks" :key="framework.name"  data-aos="fade-in">
               <div class="flex items-center gap-10">
                 <img
                   :src="framework.image"
@@ -101,7 +101,7 @@ const scrollToSection = (sectionId) => {
           <div
             class="md:flex justify-center items-center grid grid-cols-3 place-items-center gap-5"
           >
-            <div class="" v-for="tool in skills.tools" :key="tool.name">
+            <div class="" v-for="tool in skills.tools" :key="tool.name"  data-aos="fade-in">
               <div class="flex items-center gap-10" >
                 <img
                   :src="tool.image"

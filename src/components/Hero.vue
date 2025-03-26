@@ -4,9 +4,9 @@
 <template>
   <div class="w-full h-screen">
     <div
-      class="w-full h-full mx-auto grid px-4 md:px-0 grid-cols-1 grid-rows-2  sm:grid-rows-1 sm:grid-cols-2 items-center"
+      class="w-full h-full mx-auto grid px-4 md:px-0 grid-cols-1 grid-rows-2  sm:grid-rows-1 sm:grid-cols-2 items-center" 
     >
-      <div class="text-center sm:text-start grid place-content-center">
+      <div class="text-center sm:text-start grid place-content-center" data-aos="fade-right"  >
         <p class="text-md font-medium">
           Hai I'm <span class="text-sky-600 uppercase">Rizki</span> I'm a
         </p>
@@ -28,9 +28,9 @@
           </a>
         </div>
       </div>
-      <div class="w-full flex justify-center h-full items-center">
+      <div class="w-full flex justify-center h-full items-center" >
         <div
-          class="w-60 shadow h-full sm:w-90 sm:h-120 hover:grayscale-0 grayscale group transition-all duration-1000 overflow-hidden bg-cover bg-center flex items-center justify-center rounded-lg"
+          class="w-60 shadow h-full sm:w-90 sm:h-120 hover:grayscale-0 grayscale group transition-all duration-1000 overflow-hidden bg-cover bg-center flex items-center justify-center rounded-lg" data-aos="fade-in"
         >
           <img src="/images/myphoto.jpeg"
             alt=""

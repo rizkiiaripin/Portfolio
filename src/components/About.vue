@@ -40,7 +40,7 @@
       <div class="grid grid-cols-1 items-center md:grid-cols-2">
         <div class="self-justify-end">
           <div
-            class="scale-80 sm:scale-50 shadow-2xl -rotate-15 sm:-rotate-20 mb-5 bg-white py-3 px-10"
+            class="scale-80 sm:scale-50 shadow-2xl -rotate-15 sm:-rotate-20 mb-5 bg-white py-3 px-10" data-aos="flip-up"
           >
             <img
               src="/images/abouts/image-about.png"
@@ -48,7 +48,7 @@
             />
           </div>
         </div>
-        <div class="text-center sm:text-start">
+        <div class="text-center sm:text-start"  data-aos="fade-right">
           <h1 class="mb-2 text-lg">
             Hy I'm Muhamad Rizki Aripin - Full-Stack Web Developer
           </h1>

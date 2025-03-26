@@ -82,15 +82,15 @@ const closeModal = (id) => {
   <div class="my-20">
     <div class="container mx-auto w-full " id="projects">
       <div class="text-center mb-15">
-        <h1 class="font-semibold mb-3 text-slate-700 text-3xl">My Projects</h1>
+        <h1 class="font-semibold mb-3 text-slate-700 text-3xl" >My Projects</h1>
         <p class="text-center text-slate-500">Some Collections of My Projects</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10" data-aos="fade-up" >
         <div
           v-for="modal in allProjects.slice(0, visibleCount)"
           :key="modal.id"
-          :class="'w-fit h-fit group transition-all overflow-hidden relative rounded-lg mx-3 md:mx-0 ' + modal.background"
+          :class="'w-fit h-fit group transition-all overflow-hidden relative rounded-lg mx-3 md:mx-0 ' + modal.background" 
         >
           <div class="scale-85 translate-y-8 transition-all group-hover:scale-100 group-hover:translate-y-0 w-fit h-fit ease-in-out duration-600">
             <img :src="modal.image" class="rounded-lg" />

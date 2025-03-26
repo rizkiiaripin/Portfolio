@@ -2,7 +2,7 @@
 const blogs = [{
   'image': '/images/blogs/Blog1.jpg',
   'title': 'intership in company Astacode',
-  'description' :"This program is organized by the school for students to know how to work in real company , whith that  experience i get a lot of knowledge about how to work in real company",
+  'description' :"This program is organized by the school for students to know how to work in real company , whith that  experience i get a lot of knowledge about how to work in real company become backend developer",
   'date': '2 moths ago'
 }]
 </script>
@@ -20,7 +20,7 @@ const blogs = [{
     </div>
     <div class="container mx-auto">
       <div class="grid max-w-5xl place-content-center mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-5 md:mx-0">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-5 md:mx-0"  data-aos="fade-up">
           <div class="bg-white shadow-lg grid place-content-center p-2 rounded-lg" v-for="blog in blogs" :key="blog.title"> 
             <!-- header for blog -->
             <div class="w-full ">
