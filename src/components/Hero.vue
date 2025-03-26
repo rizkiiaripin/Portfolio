@@ -18,7 +18,7 @@
         <p class="text-slate-500 text-lg">
           So, surely with hardship comes ease. , <br> Surely with ˹that˺ hardship comes ˹more˺ ease
         </p>
-        <div class=" mt-6 ">
+        <div class=" ">
           <a
             href="https://wa.me/6285797779967"
             target="_blank"
