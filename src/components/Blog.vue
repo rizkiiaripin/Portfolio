@@ -3,7 +3,7 @@ const blogs = [{
   'image': '/images/blogs/Blog1.jpg',
   'title': 'intership in company Astacode',
   'description' :"This program is organized by the school for students to know how to work in real company , whith that  experience i get a lot of knowledge about how to work in real company become backend developer",
-  'date': '2 moths ago'
+  'date': '15 Jan 2025 - 15 Apr 2025'
 }]
 </script>
 

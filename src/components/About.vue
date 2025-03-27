@@ -1,6 +1,7 @@
 <script setup>
-  import { ref } from "vue";
-  const socialMedia =[{
+import { ref } from "vue";
+const socialMedia = [
+  {
     name: "Instagram",
     icon: "fa-brands fa-instagram",
     link: "https://www.instagram.com/kii.76576?igsh=MTFwcXoxd24zbzI3cg==",
@@ -23,15 +24,15 @@
   {
     name: "Github",
     icon: "fa-brands fa-github",
-    link: "https://github.com/rizkiiaripin"
-    }
-  ];
+    link: "https://github.com/rizkiiaripin",
+  },
+];
 </script>
 <template>
   <div class="my-20 mx-5 md:mx-0">
     <div class="container mx-auto w-full">
       <!-- title -->
-      <div class="text-center mb-5"> 
+      <div class="text-center mb-5">
         <h1 class="font-semibold mb-3 text-slate-700 text-3xl">About Me</h1>
         <p class="text-center text-slate-500">Allow me to introduce myself</p>
       </div>
@@ -40,42 +41,39 @@
       <div class="grid grid-cols-1 items-center md:grid-cols-2">
         <div class="self-justify-end">
           <div
-            class="scale-80 sm:scale-50 shadow-2xl -rotate-15 sm:-rotate-20 mb-5 bg-white py-3 px-10" data-aos="flip-up"
+            class="scale-80 sm:scale-50 shadow-2xl -rotate-15 sm:-rotate-20 mb-5 bg-white py-3 px-10"
+            data-aos="flip-up"
           >
-            <img
-              src="/images/abouts/image-about.png"
-              alt=""
-            />
+            <img src="/images/abouts/image-about.png" alt="" />
           </div>
         </div>
-        <div class="text-center sm:text-start"  data-aos="fade-right">
+        <div class="text-center sm:text-start" data-aos="fade-right">
           <h1 class="mb-2 text-lg">
             Hy I'm Muhamad Rizki Aripin - Full-Stack Web Developer
           </h1>
           <p class="mb-4 whitespace-pre-wrap">
-            I'm a passionate Full-Stack Developer with expertise in both
-            frontend and backend development. I love building scalable,
-            high-performance web applications that are not only functional but
-            also provide an excellent user experience.
-            I specialize in developing modern, responsive, and efficient web
-            applications from scratch or optimizing existing projects. My goal
-            is to create fast, secure, and user-friendly web experiences that
-            make an impact.
+            "I never planned to become a full-stack developer, but during my
+            time at my major is Software Engineering, I stumbled upon coding and
+            instantly fell in love. I started with simple scripts and gradually
+            moved into building full-stack applications. I have a strong
+            understanding of the software development life cycle and how to work
+            with a team to create amazing products. I am always looking to learn
+            new technologies and improve my skills."
           </p>
           <ul class="text-gray-500 dark:text-gray-400 font-medium">
-              <div class="flex mt-4  sm:mt-0 gap-2 text-xl justify-center my-4 md:justify-start md:mx-0">
-                <a
-                   v-for="media in socialMedia" :key="media.name" :href=" media.link"
-                  class="text-gray-500 hover:text-gray-900 flex items-center dark:hover:text-white"
-                >
-                  <i :class="media.icon"></i>
-
-                </a>
-                
-                
-               
-              </div>
-            </ul>
+            <div
+              class="flex mt-4 sm:mt-0 gap-3 text-xl justify-center my-4 md:justify-start md:mx-0"
+            >
+              <a
+                v-for="media in socialMedia"
+                :key="media.name"
+                :href="media.link"
+                class="text-gray-500 hover:text-gray-900 flex items-center dark:hover:text-white"
+              >
+                <i :class="media.icon"></i>
+              </a>
+            </div>
+          </ul>
         </div>
       </div>
       <!-- end content life -->

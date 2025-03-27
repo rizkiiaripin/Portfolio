@@ -6,12 +6,12 @@ const allProjects = ref([
   {
     id: 1,
     title: "Company profile LPK Tsukuba",
-    description: "Deskripsi detail mengenai Project 1.",
+    description: "This CMS (Content Management System) is a web-based platform designed to enable users to create, manage, and modify content efficiently without requiring technical expertise.this system provides an intuitive dashboard for managing pages and API integration for scalability.",
     image: "/images/projects/project-3.png",
     icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
     source: "Github",
-    link: "",
-    background: "bg-gradient-to-br from-blue-500/40 from-30% to-sky-100 to-70%",
+    link: "-",
+    background: "bg-gradient-to-br from-blue-500/40 from-30% to-green-200 to-70%",
     isOpen: false,
   },
   {
@@ -128,8 +128,7 @@ const closeModal = (id) => {
   <div v-for="modal in allProjects" :key="modal.id">
     <div v-if="modal.isOpen" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-500/50">
       <div class="relative bg-white rounded-lg shadow-md w-full mx-2 sm:mx-0 max-w-2xl">
-        <div class="flex items-center justify-between p-4 border-b border-b-slate-200">
-          <h3 class="text-xl font-semibold text-slate-700">{{ modal.title }}</h3>
+        <div class="flex items-center justify-end p-2 border-b border-b-slate-200">
           <button @click="closeModal(modal.id)" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 flex justify-center items-center">
             <svg class="w-3 h-3" fill="none" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l6 6m0 0l6 6M7 7l6-6M7 7L1 13" />
@@ -140,33 +139,36 @@ const closeModal = (id) => {
         <div class="p-4 space-y-4  h-120 overflow-y-auto">
           <div class="w-fit h-fit">
             <img :src="modal.image" class="" />
+  
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div class="col-start-1 col-end-3 order-2 sm:order-1">
+          <h3 class="text-lg mb-1 font-semibold text-slate-700">{{ modal.title }}</h3>
+
               <p class="text-base text-gray-500">{{ modal.description }}</p>
             </div>
             <div class="grid gap-2 order-1 sm:order-2">
-              <div :class="'w-full  rounded-lg py-3 px-2 text-slate-800 '+ modal.background ">
-                <h2 class="font-semibold mb-1">Stack</h2>
+              <div :class="'w-full  rounded-xl p-2 text-slate-800 '+ modal.background ">
+                <h2 class="font-semibold mb-0.5 text-sm">Stack</h2>
                 <div class="flex gap-1" >
 
                   <i v-for="icon in modal.icon" :class="icon"></i>
                 </div>
               </div>
-              <div :class="'w-full  rounded-lg py-3 px-2 text-slate-800 '+ modal.background ">
-                <h2 class="font-semibold mb-1 ">Source</h2>
+              <div :class="'w-full  rounded-xl p-2 text-slate-800 '+ modal.background ">
+                <h2 class="font-semibold mb-0.5 text-sm">Source</h2>
                 <div class="flex gap-1">
                   <a href=""
                     ><p class="text-sm underline">{{modal.source}}</p></a>
                   
                 </div>
               </div>
-              <div :class="'w-full  rounded-lg py-3 px-2 text-slate-800 '+ modal.background ">
-                <h2 class="font-semibold mb-1">Link</h2>
-                <div class="flex gap-1">
+              <div :class="'w-full  rounded-xl p-2 text-slate-800 '+ modal.background ">
+                <h2 class="font-semibold mb-0.5 text-sm">Link</h2>
+                <div class="">
                   <a :href="modal.link"
-                    ><p class="text-sm underline">{{modal.link}}</p></a
+                    >{{modal.link}}</a
                   >
                 </div>
               </div>

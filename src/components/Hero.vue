@@ -7,7 +7,7 @@
       class="w-full h-full mx-auto grid px-4 md:px-0 grid-cols-1 grid-rows-2  sm:grid-rows-1 sm:grid-cols-2 items-center" 
     >
       <div class="text-center sm:text-start grid place-content-center" data-aos="fade-right"  >
-        <p class="text-md font-medium">
+        <p class="text-lg font-medium">
           Hai I'm <span class="text-sky-600 uppercase">Rizki</span> I'm a
         </p>
         <h1 class="font-bold text-6xl mb-5 md:text-7xl text-slate-600">
@@ -15,8 +15,8 @@
           ><span class="bg-slate-200 text-slate-500 rounded-sm">e</span><br />
           Developer
         </h1>
-        <p class="text-slate-500 text-lg">
-          So, surely with hardship comes ease. , <br> Surely with ˹that˺ hardship comes ˹more˺ ease
+        <p class="text-slate-500 text-md">
+          So, surely with hardship comes ease. <br> Surely with ˹that˺ hardship comes ˹more˺ ease
         </p>
         <div class=" ">
           <a
