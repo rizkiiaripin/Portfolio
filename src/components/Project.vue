@@ -143,12 +143,12 @@ const closeModal = (id) => {
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div class="col-start-1 col-end-3 order-2 sm:order-1">
+            <div class="col-start-1 col-end-3 order-1">
           <h3 class="text-lg mb-1 font-semibold text-slate-700">{{ modal.title }}</h3>
 
               <p class="text-base text-gray-500">{{ modal.description }}</p>
             </div>
-            <div class="grid gap-2 ">
+            <div class="grid gap-2 order-2">
               <div :class="'w-full  rounded-xl p-2 text-slate-800 '+ modal.background ">
                 <h2 class="font-semibold mb-0.5 text-sm">Stack</h2>
                 <div class="flex gap-1" >
