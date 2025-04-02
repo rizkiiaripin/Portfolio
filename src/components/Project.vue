@@ -9,7 +9,7 @@ const allProjects = ref([
     description: "This CMS (Content Management System) is a web-based platform designed to enable users to create, manage, and modify content efficiently without requiring technical expertise.this system provides an intuitive dashboard for managing pages and API integration for scalability.",
     image: "/images/projects/project-3.png",
     icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
-    source: "Github",
+    source: "fa-brands fa-github",
     link: "-",
     background: "bg-gradient-to-br from-blue-500/40 from-30% to-green-200 to-70%",
     isOpen: false,
@@ -160,7 +160,8 @@ const closeModal = (id) => {
                 <h2 class="font-semibold mb-0.5 text-sm">Source</h2>
                 <div class="flex gap-1">
                   <a href=""
-                    ><p class="text-sm underline">{{modal.source}}</p></a>
+                    ><i :class="modal.source"></i></a>
+
                   
                 </div>
               </div>

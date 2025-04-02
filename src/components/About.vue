@@ -60,7 +60,7 @@ const socialMedia = [
             with a team to create amazing products. I am always looking to learn
             new technologies and improve my skills."
           </p>
-          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+          <ul class="text-gray-500 font-medium">
             <div
               class="flex mt-4 sm:mt-0 gap-3 text-xl justify-center my-4 md:justify-start md:mx-0"
             >
@@ -68,7 +68,7 @@ const socialMedia = [
                 v-for="media in socialMedia"
                 :key="media.name"
                 :href="media.link"
-                class="text-gray-500 hover:text-gray-900 flex items-center dark:hover:text-white"
+                class="text-gray-500 hover:text-gray-900 flex items-center "
               >
                 <i :class="media.icon"></i>
               </a>

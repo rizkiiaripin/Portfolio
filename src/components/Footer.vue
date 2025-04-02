@@ -40,12 +40,12 @@ const scrollToSection = (id) => {
   ];
 </script>
 <template>
-  <footer class="bg-white dark:bg-gray-900 border-t border-gray-300">
+  <footer class="bg-white border-t border-gray-300">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0 justify-self-center">
           <h1
-            class="text-5xl sm:text-6xl tracking-wide font-semibold text-gray-900 dark:text-white"
+            class="text-5xl sm:text-6xl tracking-wide font-semibold"
           >
             <span>Code smarter,</span><br />
             not harder.
@@ -54,11 +54,11 @@ const scrollToSection = (id) => {
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
           <div>
             <h2
-              class="mb-6 text-lg font-semibold text-gray-900 dark:text-white"
+              class="mb-6 text-lg font-semibold text-gray-900 "
             >
               Quick Links
             </h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <ul class="text-gray-500 font-medium">
               <li
                 class="mb-2"
                 v-for="section in [
@@ -73,7 +73,7 @@ const scrollToSection = (id) => {
               >
                 <a
                   @click.prevent="scrollToSection(section)"
-                  class="hover:underline"
+                  class="hover:underline cursor-pointer "
                 >
                   {{ section.charAt(0).toUpperCase() + section.slice(1) }}
                 </a>
@@ -83,15 +83,15 @@ const scrollToSection = (id) => {
 
           <div>
             <h2
-              class="mb-6 text-lg font-semibold text-gray-900 dark:text-white"
+              class="mb-6 text-lg font-semibold text-gray-900 "
             >
               Social Media
             </h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <ul class="text-gray-500 font-medium">
               <div class="flex mt-4 sm:justify-center sm:mt-0 gap-2 text-lg">
                 <a
                    v-for="media in socialMedia" :key="media.name" :href=" media.link"
-                  class="text-gray-500 hover:text-gray-900 flex items-center dark:hover:text-white"
+                  class="text-gray-500 hover:text-gray-900 flex items-center cursor-pointer"
                 >
                   <i :class="media.icon"></i>
 
@@ -103,12 +103,12 @@ const scrollToSection = (id) => {
         </div>
       </div>
       <hr
-        class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        class="my-6 border-gray-200 sm:mx-auto  lg:my-8"
       />
       <div
         class="sm:flex sm:items-center sm:justify-between font-semibold text-md"
       >
-        <span class="text-gray-500 sm:text-center dark:text-gray-400"
+        <span class="text-gray-500 sm:text-center "
           >© 2025 . It's
           <a href="https://github.com/rizkiiaripin" class="hover:underline text-cyan-700"
             >open source</a

@@ -5,6 +5,9 @@ const blogs = [{
   'description' :"This program is organized by the school for students to know how to work in real company , whith that  experience i get a lot of knowledge about how to work in real company become backend developer",
   'date': '15 Jan 2025 - 15 Apr 2025'
 }]
+import { useBlogStore } from "@/stores/blog";
+
+const blogStore = useBlogStore();
 </script>
 
 <template>
@@ -21,7 +24,7 @@ const blogs = [{
     <div class="container mx-auto">
       <div class="grid max-w-5xl place-content-center mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-5 md:mx-0"  data-aos="fade-up">
-          <div class="bg-white shadow-lg grid place-content-center p-2 rounded-lg" v-for="blog in blogs" :key="blog.title"> 
+          <div class="bg-white shadow-lg grid place-content-center p-2 rounded-lg" v-for="blog in blogStore.blogs" :key="blog.title"> 
             <!-- header for blog -->
             <div class="w-full ">
               <img :src="blog.image" class="rounded-t-lg" />
