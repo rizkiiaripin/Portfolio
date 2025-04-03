@@ -6,6 +6,7 @@ import { useBlogStore } from "@/stores/blog";
 const blogStore = useBlogStore();
 const title = ref("");
 const description = ref("");
+const date = ref("");
 const image = ref(null);
 const editIndex = ref(null);
 const expandedIndex = ref(null);
@@ -27,6 +28,7 @@ const addBlog = () => {
       image: image.value,
       title: title.value,
       description: description.value,
+      date: date.value,
     };
 
     if (editIndex.value !== null) {
@@ -47,6 +49,7 @@ const editBlog = (index) => {
   title.value = blog.title;
   description.value = blog.description;
   image.value = blog.image;
+  date.value = blog.date;
   editIndex.value = index;
 };
 
@@ -78,6 +81,14 @@ const toggleExpand = (index) => {
           class="border border-slate-300 rounded-lg p-2 mb-2"
           placeholder="Please enter title.."
         />
+        <label for="date" class="mb-1">Date</label>
+        <input
+          type="text"
+          id="date"
+          v-model="date"
+          class="border border-slate-300 rounded-lg p-2 mb-2"
+          placeholder="Please enter date.."
+        />
         <label for="description" class="mb-1">Description</label>
         <textarea
           rows="3"
@@ -99,6 +110,7 @@ const toggleExpand = (index) => {
             <tr>
               <th>Image</th>
               <th>Title</th>
+              <th>Date</th>
               <th>Description</th>
               <th>Action</th>
             </tr>
@@ -109,6 +121,7 @@ const toggleExpand = (index) => {
                 <img v-if="blog.image" :src="blog.image" alt="Blog Image" class="w-16 h-16 object-cover rounded-lg" />
               </td>
               <td class="max-w-20">{{ blog.title }}</td>
+              <td class="max-w-20">{{ blog.date }}</td>
               <td class="max-w-20">
                 <p @click="toggleExpand(index)" class="cursor-pointer ">
                   {{ expandedIndex === index ? blog.description : blog.description.slice(0, 50) + (blog.description.length > 50 ? "..." : "") }}

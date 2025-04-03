@@ -10,41 +10,9 @@ const allProjects = ref([
     image: "/images/projects/project-3.png",
     icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
     source: "fa-brands fa-github",
+    linkSource: "",
     link: "-",
     background: "bg-gradient-to-br from-blue-500/40 from-30% to-green-200 to-70%",
-    isOpen: false,
-  },
-  {
-    id: 2,
-    title: "Project 2",
-    description: "Deskripsi detail mengenai Project 2.",
-    image:"/images/projects/project-3.png",
-    icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
-    source: "Github",
-    link: "",
-    background: "bg-gradient-to-br from-blue-500/40 from-30% to-red-100 to-70%",
-    isOpen: false,
-  },
-  {
-    id: 3,
-    title: "Project 3",
-    description: "Deskripsi detail mengenai Project 3.",
-    image: "/images/projects/project-3.png",
-    icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
-    source: "Github",
-    link: "",
-    background: "bg-gradient-to-br from-blue-500/40 from-30% to-green-100 to-70%",
-    isOpen: false,
-  },
-  {
-    id: 4,
-    title: "Project 4",
-    description: "Deskripsi detail mengenai Project 4.",
-    image:"/images/projects/project-3.png",
-    icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
-    source: "Github",
-    link: "",
-    background: "bg-gradient-to-br from-blue-500/40 from-30% to-yellow-100 to-70%",
     isOpen: false,
   }
 ]);
@@ -159,7 +127,7 @@ const closeModal = (id) => {
               <div :class="'w-full  rounded-xl p-2 text-slate-800 '+ modal.background ">
                 <h2 class="font-semibold mb-0.5 text-sm">Source</h2>
                 <div class="flex gap-1">
-                  <a href=""
+                  <a :href="modal.linkSource"
                     ><i :class="modal.source"></i></a>
 
                   

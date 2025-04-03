@@ -12,23 +12,41 @@ const handleLogin = () => {
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center h-screen bg-gray-100">
-    <div class="flex flex-col items-center justify-center bg-white shadow-lg p-10 rounded-lg">
-      <h1 class="text-2xl mb-4">Login</h1>
-      <input
-        v-model="username"
-        placeholder="Username"
-        class="border p-2 mb-2  rounded-lg"
-      />
-      <input
-        v-model="password"
-        type="password"
-        placeholder="Password"
-        class="border p-2 mb-2 rounded-lg"
-      />
-      <button @click="handleLogin" class="bg-blue-500 text-white px-4 py-2 rounded-lg">
-        Login
-      </button>
+  <div class="grid grid-cols-1 md:grid-cols-2 h-screen">
+    <div class="bg-gray-100 md:flex hidden">
+      <img src="/guest-background.svg" alt="" />
+    </div>
+    <div class="grid content-center justify-center">
+      <div class="grid max-w-[424px] md:min-w-[424px] margin-auto p-1.75">
+        <div class="text-center mb-5 ">
+          <h1 class="text-2xl mb-3 font-semibold">Sign in</h1>
+          <p class="text-slate-500">Sign in to your account to start using this CMS</p>
+        </div>
+        <form class="">
+          <div class="mb-2">
+            <label for="username" class="mb-1">Username</label>
+            <input
+              v-model="username"
+              placeholder="Type your username"
+              class="border py-2 px-3 placeholder:text-md mb-2 mt-2 w-full rounded-sm border border-slate-500"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="mb-1">Password</label>
+            <input
+              v-model="password"
+              placeholder="Type your password"
+              class="border py-2 px-3 placeholder:text-md mb-2 mt-2 w-full rounded-sm border border-slate-500"
+            />
+          </div>
+          <button
+            @click="handleLogin"
+            class="bg-primary font-semibold text-white px-4 py-3 w-full rounded-sm"
+          >
+            Sign in
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 </template>
