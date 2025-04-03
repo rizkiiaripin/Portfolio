@@ -22,13 +22,14 @@ const handleLogin = () => {
           <h1 class="text-2xl mb-3 font-semibold">Sign in</h1>
           <p class="text-slate-500">Sign in to your account to start using this CMS</p>
         </div>
-        <form class="">
+        <form class="" 
+            @submit.prevent="handleLogin">
           <div class="mb-2">
             <label for="username" class="mb-1">Username</label>
             <input
               v-model="username"
               placeholder="Type your username"
-              class="border py-2 px-3 placeholder:text-md mb-2 mt-2 w-full rounded-sm border border-slate-500"
+              class="border py-2 px-3 placeholder:text-md mb-2 mt-2 w-full rounded-sm border border-slate-500" required
             />
           </div>
           <div class="mb-3">
@@ -36,11 +37,10 @@ const handleLogin = () => {
             <input
               v-model="password"
               placeholder="Type your password"
-              class="border py-2 px-3 placeholder:text-md mb-2 mt-2 w-full rounded-sm border border-slate-500"
+              class="border py-2 px-3 placeholder:text-md mb-2 mt-2 w-full rounded-sm border border-slate-500" required
             />
           </div>
           <button
-            @click="handleLogin"
             class="bg-primary font-semibold text-white px-4 py-3 w-full rounded-sm"
           >
             Sign in
