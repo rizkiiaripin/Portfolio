@@ -24,6 +24,8 @@ const routes = [
     path: "/login",
     name: "login",
     component: () => import("@/Login.vue"),
+    meta: { requiresAuth: false }, // Proteksi route
+
   },
   // Route fallback untuk halaman yang tidak ditemukan
   { path: "/:pathMatch(.*)*", name: "NotFound", component: NotFound },
@@ -40,10 +42,12 @@ router.beforeEach((to, from, next) => {
   const user = localStorage.getItem("user");
 
   // Jika route memerlukan autentikasi dan user belum login, arahkan ke /login
-  if (to.meta.requiresAuth && !user) {
-    next("/login");
-  } else {
-    next();
+  if (to.meta.requiresAuth === false && user) {
+    next("/dashboard")
+  }else if(to.meta.requiresAuth === true && !user) {
+    next('/login')
+  }else{
+    next()
   }
 });
 

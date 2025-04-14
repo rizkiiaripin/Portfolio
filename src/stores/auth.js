@@ -7,7 +7,7 @@ export const useAuthStore = defineStore("auth", () => {
   const router = useRouter();
 
   const login = (username, password) => {
-    if (username === "admin" && password === "password") {
+    if (username === "admin" && password === "password/secret123") {
       user.value = { username };
       localStorage.setItem("user", JSON.stringify(user.value));
       router.push("/dashboard");

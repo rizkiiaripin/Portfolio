@@ -36,6 +36,7 @@ const handleLogin = () => {
             <label for="password" class="mb-1">Password</label>
             <input
               v-model="password"
+              type="password"
               placeholder="Type your password"
               class="border py-2 px-3 placeholder:text-md mb-2 mt-2 w-full rounded-sm border border-slate-500" required
             />
