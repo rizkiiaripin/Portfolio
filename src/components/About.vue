@@ -41,10 +41,10 @@ const socialMedia = [
       <div class="grid grid-cols-1 items-center md:grid-cols-2">
         <div class="self-justify-end">
           <div
-            class="scale-80 sm:scale-50 shadow-2xl -rotate-15 sm:-rotate-20 mb-5 bg-white py-3 px-10"
+          class="scale-80 sm:scale-50 hover:grayscale-0 grayscale shadow-2xl -rotate-15 sm:-rotate-20 mb-5 bg-white py-4 px-10"
             data-aos="flip-up"
           >
-            <img src="/images/abouts/image-about.png" alt="" />
+            <img src="/images/abouts/about-me.jpg" alt="" />
           </div>
         </div>
         <div class="text-center sm:text-start" data-aos="fade-right">
