@@ -14,6 +14,18 @@ const allProjects = ref([
     link: "-",
     background: "bg-gradient-to-br from-blue-500/40 from-30% to-green-200 to-70%",
     isOpen: false,
+  },
+  {
+    id: 2,
+    title: "Company profile LPK Tsukuba",
+    description: "This CMS (Content Management System) is a web-based platform designed to enable users to create, manage, and modify content efficiently without requiring technical expertise.this system provides an intuitive dashboard for managing pages and API integration for scalability.",
+    image: "/images/projects/koyasai.png",
+    icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
+    source: "fa-brands fa-github",
+    linkSource: "",
+    link: "-",
+    background: "bg-gradient-to-br from-blue-500/40 from-30% to-yellow-100 to-70%",
+    isOpen: false,
   }
 ]);
 
