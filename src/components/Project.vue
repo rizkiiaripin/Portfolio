@@ -1,21 +1,9 @@
 <script setup>
 import { ref } from "vue";
+import { Projects } from "../data/projects.js"; // Import data proyek
 
 // Semua data proyek
-const allProjects = ref([
-  {
-    id: 2,
-    title: "Company profile koyasai",
-    description: "This CMS (Content Management System) is a web-based platform designed to enable users to create, manage, and modify content efficiently without requiring technical expertise.this system provides an intuitive dashboard for managing pages and API integration for scalability.",
-    image: "/images/projects/koyasai.png",
-    icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
-    source: "fa-brands fa-github",
-    linkSource: "",
-    link: "-",
-    background: "bg-gradient-to-br from-blue-500/40 from-30% to-yellow-100 to-70%",
-    isOpen: false,
-  }
-]);
+const allProjects = ref(Projects);
 
 // Jumlah proyek yang ditampilkan
 const visibleCount = ref(4);
@@ -134,9 +122,9 @@ const closeModal = (id) => {
                 </div>
               </div>
               <div :class="'w-full  rounded-xl p-2 text-slate-800 '+ modal.background ">
-                <h2 class="font-semibold mb-0.5 text-sm">Link</h2>
+                <h2 class="font-semibold text-sm">Link</h2>
                 <div class="">
-                  <a :href="modal.link"
+                  <a :href="modal.link" class="text-sm "
                     >{{modal.link}}</a
                   >
                 </div>

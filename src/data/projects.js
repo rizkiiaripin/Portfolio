@@ -1,0 +1,37 @@
+export const Projects = [
+  {
+    id: 1,
+    title: "Company profile koyasai",
+    description: "This CMS (Content Management System) is a web-based platform designed to enable users to create, manage, and modify content efficiently without requiring technical expertise.this system provides an intuitive dashboard for managing pages and API integration for scalability.",
+    image: "/images/projects/koyasai.png",
+    icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap"],
+    source: "fa-brands fa-github",
+    linkSource: "",
+    link: "https://koyasai.co.id/",
+    background: "bg-gradient-to-br from-blue-500/40 from-30% to-yellow-100 to-70%",
+    isOpen: false,
+  },
+  {
+    id: 2,
+    title: "Company profile LPK Tsukuba",
+    description: "Compro (Company Profile) LPK Tsukuba is a company profile website which is used to introduce the company to the public and introduce their program to work in Japan. If you are interested in working at Japan, go check their website.",
+    image: "/images/projects/lpktsukuba.png",
+    icon: ["fa-brands fa-laravel", "fa-brands fa-bootstrap", "fa-brands fa-vuejs" ],
+    source: "fa-brands fa-github",
+    linkSource: "",
+    link: "https://lpktsukuba.vercel.app/",
+    background: "bg-gradient-to-br from-green-500/40 from-30% to-red-100 to-70%",
+    isOpen: false,
+  },{
+    id: 3,
+    title: "Organization profile PAC IPNU IPPNU",
+    description: "Organization profile PAC IPNU IPPNU is a organization profile website which is used to introduce the organization PAC IPNU IPPNU to the public.",
+    image: "/images/projects/pac.png",
+    icon: [  "fa-brands fa-vuejs" ],
+    source: "fa-brands fa-github",
+    linkSource: "",
+    link: "-",
+    background: "bg-gradient-to-br from-green-700/40 from-30% to-slate-300 to-70%",
+    isOpen: false,
+  }
+];
